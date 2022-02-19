@@ -1,16 +1,10 @@
-# Final Project - Infant Incubator Model and Simulator
+# Lab 4 - Infant Incubator Model and Simulator
 
-In this assignment you will apply everything you have learned in this module on a real world application, the Infant Incubator. The Infant Incubator is designed to provide a safe, controlled 
-space for infants to live while their vital organs develop. Unlike a simple bassinet, an incubator provides an environment that can be adjusted to provide the ideal temperature as well as the perfect amount 
-of oxygen, humidity, and light. This paticular Infant Incubator is set to release on **15th August**(Deadline of the Project). The developers of this project would like you, the Security Engineer, to ensure the product satisify US Government's security regulations for medical devices before the release date. As a Security Engineer, you are required **"Make sure we satisfiy US Government Regulations"**. The company has given you the options of accomplishing this by either implementing Vulnerability Patching or creating a Risk Analysis Report.
-
-**Note: You are allowed to do this project individually or with another Security Engineer**
-
-The final deliverables for this project could be either one of these:
+In this lab you will apply everything you have learned in this module on a real world application, the Infant Incubator. The Infant Incubator is designed to provide a safe, controlled space for infants to live while their vital organs develop. Unlike a simple bassinet, an incubator provides an environment that can be adjusted to provide the ideal temperature as well as the perfect amount of oxygen, humidity, and light. This paticular Infant Incubator is set to release on **26th February**(Deadline of the Lab). The developers of this project would like your team to ensure the product satisify US Government's security regulations for medical devices before the release date. As a Security Engineer Team, you are required **"Make sure we satisfiy US Government Regulations"**.
 
 ##  Vulnerability Patching
 
-** Task- Identify Vulnerabilities and Testcases**
+**Your Task- Identify 3 Vulnerabilities and create 3 Testcases**
 
 Your first goal as a Security Engineer who wants to ensure the security of the application is to identify security vulnerabilities in the project and create testcases to exploit them. In the real world, applications are often tested with test scripts. The following are a few questions a Security Engineer would ask when writing a testcase to test the Security of their application:
 
@@ -18,9 +12,9 @@ Your first goal as a Security Engineer who wants to ensure the security of the a
 - "Does this application hamper performance?"
 - "Does this application prevent actions that should be allowed?"
 
-Notice that these questions are parallel to security paradigms: Security, Efficiency and Accuracy, Availability. If you can find a hypothesis where a security paradigm is not met that would mean the application is not secure and a possible exploit exist. The testcases can be written in python or bash.
+Notice that these questions are parallel to security paradigms: Security, Efficiency and Accuracy, Availability. If you can find a hypothesis where a security paradigm is not met that would mean the application is not secure and a possible exploit exist. The testcases should be written in Python.
 
-Sample Testcase (Will be shared later today):
+Sample Testcase:
 ```
 #This is just an example of a testcase
 #Vulnerability Name - Authentication available
@@ -45,6 +39,8 @@ except Exception as ex:
     assert(1 == 2)
 
 ```
+##Submission:
+This is a group submission. Please submit only one python notebook per group. Make sure to run all the cells and then download the notebook (format – ipynb). Title of the notebook should be lab4_group_<your group number>.ipynb.  Good luck!!
 
 ## Infant Incubator Model Explained
 Cybersecurity education lacks practicality. We know the security principles. We know the importance of cryptography and building-security-in. We know the importance of an adversarial mindset (the security mindset). We know the importance of exposing assumptions (especially implicit ones). However, how many of us know how to apply these theoretical principles in the real world? How to trade off security for the other abilities. While build in security is incomplete, we also need to plan for upgrades.
