@@ -8,9 +8,9 @@ of oxygen, humidity, and light. This paticular Infant Incubator is set to releas
 
 The final deliverables for this project could be either one of these:
 
-## Option 1 - Vulnerability Patching
+##  Vulnerability Patching
 
-**Part 1.1 - Identify Vulnerabilities and Testcases**
+** Task- Identify Vulnerabilities and Testcases**
 
 Your first goal as a Security Engineer who wants to ensure the security of the application is to identify security vulnerabilities in the project and create testcases to exploit them. In the real world, applications are often tested with test scripts. The following are a few questions a Security Engineer would ask when writing a testcase to test the Security of their application:
 
