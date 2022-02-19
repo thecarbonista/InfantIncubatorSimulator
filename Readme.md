@@ -16,7 +16,7 @@ Your first goal as a Security Engineer who wants to ensure the security of the a
 
 - "Does this application protect the confidentiaility of data?"
 - "Does this application hamper performance?"
-- "Does this application prevent actions that shoudl be allowed?"
+- "Does this application prevent actions that should be allowed?"
 
 Notice that these questions are parallel to security paradigms: Security, Efficiency and Accuracy, Availability. If you can find a hypothesis where a security paradigm is not met that would mean the application is not secure and a possible exploit exist. The testcases can be written in python or bash.
 
@@ -45,69 +45,6 @@ except Exception as ex:
     assert(1 == 2)
 
 ```
-
-**Part 1.2 - Fix the vulnerabilities**
-
-For each of the vulnerabilies you have identified in Part 1.1, fix the vulnerability to ensure they are no longer exploitable.
-
-### **Running the Infant Incubator** 
-To run the main code [SampleNetworkServer.py](SampleNetworkServer.py)
-
-```
-python3 SampleNetworkServer.py
-```
-
-Note: The code only runs on python 3. If you run into the error `ModuleNotFoundError: No Module named 'matplotlib'`, install matplotlib with the following command:
-```
-pip3 install matplotlib
-```
-
-Hint: 
-```
-#Other ways to connect to the Infant Incubator Server
-nc -u 127.0.0.1 23456
-
-#Authenticating with the Server. This should return you a AUTH_TOKEN
-AUTH !Q#E%T&U8i6y4r2w
-
-#Running commands with the Server
-AUTH_TOKEN;SET_DEGF
-or
-AUTH_TOKEN;SET_DEGK
-```
-
-**What to Submit**
-
-On NYU Brightspace, submit a link to your GitHub repository.
-
-The repository should contain:
- - Testcases (40)
-    - Minimum 4 Testcases that works and are real vulnerabilites. (10 for each)
- - Vulnerabilies (40)
-    - Minimum 4 Vulnerabilies that works. (10 for each)
-    Note: 2 different vulnerability could have the same fix.
- - Vulnerabilies.txt (20)
-    - 20 marks for description of the vulnerabilies, testcases and patches.
-
-## Option 2 - Risk Analysis Report
-As a Security Engineer, write a detailed Risk Analysis Report for the Infant Incubator application. This report should contain details on the vulnerabilities and how they do not satisify the US Government Regulations(Refer to resources provide below). To identify this vulnerabilies you are encouraged to use tools you have learned in this course such as Threat Modelling and Risk Assesment. In the real world, Security Engineers are not given alot of details about the architecture or details on the program so they often have to make assumptions to find attack vectors and threats. 
-
-Resources:
-
-Software as a Medical Device (SAMD): Clinical Evaluation  Guidance for Industry and  Food and Drug Administration Staff - https://www.fda.gov/media/100714/download
-
-Pre-Market Considerations for Medical Device Cybersecurity - http://www.imdrf.org/docs/imdrf/final/technical/imdrf-tech-200318-pp-mdc-n60.pdf
-
-**What to Submit**
-
-On NYU Brightspace, submit your detailed risk analysis report.
-
-Risk Analysis Report Format:
-- Background (Architecture) (20)
-- Identify Assets (20)
-- Threat Modelling/Risk Analysis (30)
-- Apply Security Reviews (How do you mitigate the threats) (30)
-
 
 ## Infant Incubator Model Explained
 Cybersecurity education lacks practicality. We know the security principles. We know the importance of cryptography and building-security-in. We know the importance of an adversarial mindset (the security mindset). We know the importance of exposing assumptions (especially implicit ones). However, how many of us know how to apply these theoretical principles in the real world? How to trade off security for the other abilities. While build in security is incomplete, we also need to plan for upgrades.
