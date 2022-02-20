@@ -1,46 +1,20 @@
-# Lab 4 - Infant Incubator Model and Simulator
+# Lab 4 - Infant Incubator Model and Simulator - Overview   
 
 In this lab you will apply everything you have learned in this module on a real world application, the Infant Incubator. The Infant Incubator is designed to provide a safe, controlled space for infants to live while their vital organs develop. Unlike a simple bassinet, an incubator provides an environment that can be adjusted to provide the ideal temperature as well as the perfect amount of oxygen, humidity, and light. The developers of this project would like your team to ensure the product satisify US Government's security regulations for medical devices before the release date. As a Security Engineer Team, you are required **"Make sure we satisfiy US Government Regulations"**.
 
-##  Vulnerability Patching
 
-**Your Task- Identify 3 Vulnerabilities and create 3 Testcases.**
+## Task:
 
-Your first goal as a Security Engineer who wants to ensure the security of the application is to identify security vulnerabilities in the project and create testcases to exploit them. In the real world, applications are often tested with test scripts. The following are a few questions a Security Engineer would ask when writing a testcase to test the Security of their application:
+- Go over the readme and understand what this project is about. You should be able to get all your information from this readme. 
+- You are expected to go over all the python files in this repository and identify the crypto libraries/function used. 
+- Once you have identified all the libraries, please write a short writeup explaining what these functions take as parameters in this project. 
 
-- "Does this application protect the confidentiaility of data?"
-- "Does this application hamper performance?"
-- "Does this application prevent actions that should be allowed?"
+## Submission
 
-Notice that these questions are parallel to security paradigms: Security, Efficiency and Accuracy, Availability. If you can find a hypothesis where a security paradigm is not met that would mean the application is not secure and a possible exploit exist. The testcases should be written in Python.
+1. Summarize your understanding of Infant Incubator Simulator in no more than 500 words.
+2. Identify and list all the libraries being used in the project and explain in a sentence or two, what the parameters are.
 
-Sample Testcase:
-```
-#This is just an example of a testcase
-#Vulnerability Name - Authentication available
-import socket
-
-def authenticate(p, pw) :
-    s = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
-    s.sendto(b"AUTH %s" % pw, ("127.0.0.1", p))
-    msg, addr = s.recvfrom(1024)
-    return msg.strip()
-
-try:
-    
-    infPort = 23456
-    incPort = 23457
-    incToken = authenticate(incPort, b"!Q#E%T&U8i6y4r2w")
-
-    # SampleNetworkServer has authentication so the testcase will exit at this assertion.
-    assert(incToken != None)
-except Exception as ex:
-    print (ex)
-    assert(1 == 2)
-
-```
-## Submission:
-This is a group submission. Please submit only one python notebook per group. Make sure to run all the cells and then download the notebook (format – ipynb). Title of the notebook should be lab4_group_<your group number>.ipynb.  Good luck!!
+#### Note: This is a group submission. Please write your responses in a word file and convert it to the pdf. Submit only one pdf file per group. Title of the file should be lab4_group_<your group number>.pdf. Good luck!
 
 ## Infant Incubator Model Explained
 Cybersecurity education lacks practicality. We know the security principles. We know the importance of cryptography and building-security-in. We know the importance of an adversarial mindset (the security mindset). We know the importance of exposing assumptions (especially implicit ones). However, how many of us know how to apply these theoretical principles in the real world? How to trade off security for the other abilities. While build in security is incomplete, we also need to plan for upgrades.
