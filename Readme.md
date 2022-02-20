@@ -4,7 +4,7 @@ In this lab you will apply everything you have learned in this module on a real 
 
 ##  Vulnerability Patching
 
-**Your Task- Identify 3 Vulnerabilities and create 3 Testcases**
+**Your Task- Identify 3 Vulnerabilities and create 3 Testcases.**
 
 Your first goal as a Security Engineer who wants to ensure the security of the application is to identify security vulnerabilities in the project and create testcases to exploit them. In the real world, applications are often tested with test scripts. The following are a few questions a Security Engineer would ask when writing a testcase to test the Security of their application:
 
