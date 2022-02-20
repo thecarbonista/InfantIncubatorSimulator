@@ -1,6 +1,6 @@
 # Lab 4 - Infant Incubator Model and Simulator
 
-In this lab you will apply everything you have learned in this module on a real world application, the Infant Incubator. The Infant Incubator is designed to provide a safe, controlled space for infants to live while their vital organs develop. Unlike a simple bassinet, an incubator provides an environment that can be adjusted to provide the ideal temperature as well as the perfect amount of oxygen, humidity, and light. This paticular Infant Incubator is set to release on **26th February**(Deadline of the Lab). The developers of this project would like your team to ensure the product satisify US Government's security regulations for medical devices before the release date. As a Security Engineer Team, you are required **"Make sure we satisfiy US Government Regulations"**.
+In this lab you will apply everything you have learned in this module on a real world application, the Infant Incubator. The Infant Incubator is designed to provide a safe, controlled space for infants to live while their vital organs develop. Unlike a simple bassinet, an incubator provides an environment that can be adjusted to provide the ideal temperature as well as the perfect amount of oxygen, humidity, and light. The developers of this project would like your team to ensure the product satisify US Government's security regulations for medical devices before the release date. As a Security Engineer Team, you are required **"Make sure we satisfiy US Government Regulations"**.
 
 ##  Vulnerability Patching
 
@@ -39,7 +39,7 @@ except Exception as ex:
     assert(1 == 2)
 
 ```
-##Submission:
+## Submission:
 This is a group submission. Please submit only one python notebook per group. Make sure to run all the cells and then download the notebook (format – ipynb). Title of the notebook should be lab4_group_<your group number>.ipynb.  Good luck!!
 
 ## Infant Incubator Model Explained
